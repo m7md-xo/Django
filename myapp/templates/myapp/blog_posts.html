@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Posts</title>
+</head>
+<body>
+    <h1>All Blog Posts</h1>
+    <ul>
+        {% for post in posts %}
+            <li>{{ post.title }} - {{ post.content }}</li>
+        {% empty %}
+            <li>No posts available</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
