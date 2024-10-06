@@ -1,0 +1,57 @@
+/* تنسيق النصوص */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* لون الخلفية */
+}
+
+h1, h2, h3 {
+    color: #333; /* لون النصوص */
+}
+
+/* تنسيق الأزرار */
+button {
+    background-color: #5cb85c; /* لون خلفية الزر */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    padding: 10px 20px; /* المساحة الداخلية */
+    text-align: center; /* محاذاة النص */
+    text-decoration: none; /* إزالة التحته */
+    display: inline-block; /* تحسين عرض الزر */
+    font-size: 16px; /* حجم النص */
+    margin: 4px 2px; /* المسافة الخارجية */
+    cursor: pointer; /* تغيير شكل المؤشر عند المرور فوق الزر */
+    border-radius: 5px; /* زوايا مدورة */
+}
+
+/* تنسيق الروابط */
+a {
+    color: #007bff; /* لون الروابط */
+    text-decoration: none; /* إزالة التحته */
+}
+
+a:hover {
+    text-decoration: underline; /* إضافة التحته عند تمرير المؤشر */
+}
+
+/* تنسيق صناديق المعلومات */
+.alert {
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #dff0d8; /* لون الخلفية للنجاح */
+    border-color: #d6e9c6; /* لون الحدود */
+    color: #3c763d; /* لون النص */
+}
+
+.alert-danger {
+    background-color: #f2dede; /* لون الخلفية للخطر */
+    border-color: #ebccd1; /* لون الحدود */
+    color: #a94442; /* لون النص */
+}

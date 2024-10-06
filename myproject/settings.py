@@ -122,3 +122,15 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+import os
+
+# قم بتعديل BASE_DIR إذا لزم الأمر
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# إعدادات الملفات الثابتة
+STATIC_URL = '/static/'
+
+# إعدادات المسار للملفات الثابتة
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),  # إذا كان لديك مجلد 'static' في جذر المشروع
+]
